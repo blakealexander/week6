@@ -9,6 +9,7 @@
     var outcome = document.querySelector("#value");
     var selPlus = document.querySelector("#plus");
     var selMinus = document.querySelector("#minus");
+    var userChoice = "";
     // console.log(num1);
     // console.log(num2);
     // console.log(equals);
@@ -21,11 +22,17 @@
 
 
     //functions
-    function addStuff() {
+    function doStuff() {
+        var total = "";
+        console.log(userChoice);
     	// console.log("from addStuff");
     	// console.log(num1.value);
     	// console.log(num2.value);
-    	var total = parseInt(num1.value) + parseInt(num2.value);
+        if(userChoice == "add"){
+    	 total = parseInt(num1.value) + parseInt(num2.value);
+    }else{
+         total = parseInt(num1.value) - parseInt(num2.value);
+    }
     	// console.log(total);
     	outcome.innerHTML = total;
     }
@@ -40,8 +47,10 @@
 //               console.log("User clicked -");}
                  if(evt.currentTarget.id == "plus"){
                      console.log("add");
+                     userChoice = "add";
                  }else{
                      console.log("sub");
+                     userChoice = "sub";
                  }
             
      
@@ -50,7 +59,7 @@
 
 
     //listeners
-    equals.addEventListener("click", addStuff, false);
+    equals.addEventListener("click", doStuff, false);
     selPlus.addEventListener("click", selCal, false);
      selMinus.addEventListener("click", selCal, false);
 
