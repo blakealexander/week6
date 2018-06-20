@@ -1,0 +1,42 @@
+#plus {
+    background-color: lawngreen;
+    width: auto;
+    display: inline-block;
+    padding: 9px;
+    color: #999;
+    border-radius: 10px;
+}
+
+#plus:hover{
+    background-color: forestgreen;
+}
+#minus {
+    background-color: orangered;
+    width: 8px;
+    display: inline-block;
+    padding: 9px;
+    color: #999;
+    border-radius: 10px;
+}
+
+#minus:hover{
+    background-color: darkred;
+}
+
+
+
+
+
+#input1{
+    background-color: mintcream;
+    border-radius: 5px;
+   
+}
+
+#input2{
+    background-color: mintcream;
+    border-radius: 5px;
+   
+}
+
+
